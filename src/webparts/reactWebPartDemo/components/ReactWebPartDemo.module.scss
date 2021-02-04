@@ -1,0 +1,197 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+.reactWebPartDemo {
+  .container {
+    max-width: 992px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+   // background-color: $ms-color-themeDark;
+    padding: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  .bgColor {
+    background-color: #93934d;
+  }
+
+  .userInfoBox {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  .userImg {
+    /* border: 1px solid red; */
+    height: 80px;
+    width: 70px;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-align: left;
+  }
+
+  .userName {
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  .textColor {
+    color: #fff !important;
+  }
+  .textSize{
+    font-size: small;
+  }
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus,
+  .nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+  }
+
+  .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+  }
+  .nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .nav > li > a {
+    padding: 10px 15px;
+    font-weight: 700;
+    color: #23b9ce;
+  }
+
+  .nav > li,
+  .nav > li > a {
+    display: block;
+    position: relative;
+  }
+  // @media (min-width: 1140px) {
+  //   .col-md-12{
+  //     width: 100%;
+  //   }
+  // }
+  
+ // }
+  // }
+
+  @media (min-width: 992px ) {
+    .col-md-4{
+      width: 33.3333334%;
+    }
+  }
+  
+  @media (min-width: 992px ) {
+    .col-md-8{
+      width: 66.6666667%;
+    }
+  }
+  @media (min-width: 992px ) {
+    .col-md-12{
+      width: 100%
+    }
+  }
+  h5 {
+    display:flex;
+  }
+  
+  
+  @media (min-width: 992px) {
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9 {
+      float: left;
+    }
+  }
+
+  
+
+
+
+
+}
